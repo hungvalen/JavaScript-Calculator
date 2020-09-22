@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: #2c2c54;
+}
+.calculator{
+    position: relative;
+    display:grid;
+}
+.calculator .value{
+    grid-column: span 4;
+    height:100px;
+    text-align:right;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:18px;
+}
+.calculator span{
+    display:grid;
+    width:60px;
+    height:60px;
+    color:#fff;
+    background:#474787;
+    place-items:center;
+    border: 1px solid rgba(44, 44, 84,1.0);
+}
+.calculator span:active{
+    background:#34ace0;
+    color:#111;
+}
+.calculator span.clear{
+    background: #b33939;
+    grid-column: span 2;
+    width:120px;
+}
+.calculator span.plus{
+    grid-row:span 2;
+    height:120px;
+}
+.calculator span.equal{
+    background: #227093;
+}
